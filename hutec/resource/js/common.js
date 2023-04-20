@@ -3,6 +3,7 @@ const PARENT 				= $("body"); //전역 최상단 문서위치
 const INCLUDE_PATH 	= "include/";
 const POPUP_PATH    = "include/popup/";
 const PAGE_PATH 		= "include/page/";
+const DETAIL_PAGE_PATH = "include/page/detail";
 
 
 $(document).ready(function(){

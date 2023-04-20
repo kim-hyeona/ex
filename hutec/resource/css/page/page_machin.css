@@ -108,35 +108,60 @@ ul{
 main{
     width: 1123px;
     height: 465px;
+    position: relative;
 }
 
-label{
-    width: 1183px;
+.language_select{
     display: flex;
-    justify-content: space-between;
+    width: 1182px;
+    height: 55px;
+    display: flex;
+    border: 1px solid #D1D5DB;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     
 }
 
-main form > select {
-    padding: 0 24px;
-    width: 548px; height: 48px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border: 1px solid #ced7dd;
-    border-bottom: none;
+.language_select > li{
+    width: 591px;
+    padding: 15px;
+    
 }
 
-main form > select:first-child{
-    font-weight: bold;
-    font-size: 14px;
+
+.languages{
+    display: none;
+    background-color: white;
+    width: 1182px; height: 420px;
+    justify-content: center;
+    position: absolute;
+    top:55px;
+    transform: translateX(-605px);
+    flex-wrap: wrap;
+    overflow: scroll;
+    z-index: 999;
 }
+
+.languages li{
+    width: 200px; height: 55px;
+    text-align: center;
+}
+
+.language_btn{
+    width: 11px;
+    cursor: pointer;
+}
+
+.rotate {
+    transform: rotate(180deg);
+  }
 
 main > .file_uploed {
     width: 1183px;
     height: 417px;
     border: 3px solid #ced7dd;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    position: relative;
+    overflow-y: hidden;
 }
 
 main > .file_uploed > div{
@@ -149,8 +174,46 @@ main > .file_uploed > div{
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly
+    margin-bottom: 10px;
 }
+
+main > .file_uploed > input{
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    bottom: 0;
+   
+}
+
+input[type="file"] {
+    position: relative;
+   
+    border-radius: 3px;
+    bottom: 130px;
+    
+  }
+  
+  input[type="file"]::before {
+    content: "선택하기";
+    display: inline-block;
+    background-color: black;
+    color: white; 
+    font-size: 16px;
+    border-radius: 4px;
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+    width: 244px; height: 50px;
+    cursor: pointer;
+    line-height: 50px;
+    border-radius: 3px;
+  }
+  
+  input[type="file"]:hover::before {
+    background-color: gray;
+  }
+
 
 .file_title{
     /* font-family: Noto Sans KR; */
@@ -164,14 +227,6 @@ main > .file_uploed > div{
 }
 
 
-.file_uploed button{
-    width: 244px; height: 50px;
-    background-color: #000000;
-    color:white;
-    font-size: 16px;
-    border-radius: 3px;
-}
-
 .sub_select{
     width: 1190px;
     margin: 0 16%;
@@ -182,7 +237,7 @@ main > .file_uploed > div{
 
     font-size: 24px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin: 30px 0;
 }
 
 .sub_select h3::after{
@@ -224,6 +279,74 @@ main > .file_uploed > div{
 .sub_type div{
     display: flex;
     align-items: center;
+}
+
+.plus_choice{
+    display: flex;
+    line-height: 55px;
+}
+.plus_choice > div{
+    margin-bottom: 5px;
+}
+
+.plus_choice > div >img{
+    margin-left: 10px;
+}
+
+.plus_choice > div:first-child{
+    width: 135px;
+    height: 55px;
+    background-color: #FBF1FB;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.plus_choice > div:last-child{
+    width: 1055px; height: 55px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #DADADA;
+}
+
+table td{
+    border: 1px solid #DADADA;
+    text-align: center;
+    padding: 10px;
+}
+
+.btn_container{
+    width: 790px;
+    margin: 70px auto;
+}
+
+.btn_container button{
+    width: 193px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.re_estimate{
+    background-color: #898989;
+}
+
+.basket{
+    background-color: #252525;
+}
+
+.now_pay{
+    background-color: #FF002F;
+}
+
+.point_payment{
+    background-color: #31881B;
 }
 
 .benner{

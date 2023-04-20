@@ -7,7 +7,7 @@ var app = Sammy(function () {
   this.get("/", function () { pageTransition(`${PAGE_PATH}admin.html`); });
   
   //메인
-  this.get("#/admin", function () { pageTransition(`${PAGE_PATH}admin.html`); });
+  this.get("#/admin", function () { pageTransition(`${최근로그인}admin.html`); });
   
   //404
   this.notFound = function (verb, path) { $("#PAGE_VIEW").html("404, 페이지 못찾음"); };

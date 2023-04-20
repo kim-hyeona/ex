@@ -1,0 +1,539 @@
+<link rel="stylesheet" href="../../resource/css/page/detail_page.css">
+
+<main>
+    <div class="content">
+        <section id="section" class="st1">
+            <div class="tit">
+                <h2>
+                    오류 신고 목록
+                </h2>
+            </div>
+            <!-- //tit -->
+
+            <div class="com_table_box adm_banner_box">
+                <table class="com_table">
+                    <colgroup>
+                        <col width="250">
+                        <col width="1167">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>
+                                오류 신고 종류
+                            </th>
+                            <td>
+                                <div class="table_com_btn">
+                                    <a href="#" class="active">전체</a>
+                                    <a href="#">번역</a>
+                                    <a href="#">기타</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                등록 일시
+                            </th>
+                            <td>
+                                <div class="period_box">
+                                    <!-- //calendar_wrap -->
+                                    <div class="calendar_wrap">
+                                        <div class="calendar_box">
+                                            <input id="1" type="text" placeholder="21.05.01" readonly="">
+                                            <label for="1" class="blind">달력</label>
+                                            <button class="calendar_btn">달력</button>
+                                        </div>
+                                        ~
+                                        <div class="calendar_box">
+                                            <input id="2" type="text" placeholder="21.05.01" readonly="">
+                                            <label for="2" class="blind">달력</label>
+                                            <button class="calendar_btn">달력</button>
+                                        </div>
+                                    </div>
+                                    <!-- //calendar_wrap -->
+
+                                    <div class="period_list">
+                                        <a href="#" class="period_color1">어제</a>
+                                        <a href="#" class="period_color1">오늘</a>
+                                        <a href="#" class="period_color2">1개월</a>
+                                        <a href="#" class="period_color2">3개월</a>
+                                        <a href="#" class="period_color2">6개월</a>
+                                        <a href="#" class="period_color2">1년</a>
+                                    </div>
+                                    <!-- //period_list -->
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                답변 여부
+                            </th>
+                            <td>
+                                <div class="table_com_btn">
+                                    <a href="#" class="active">전체</a>
+                                    <a href="#">답변</a>
+                                    <a href="#">미답변</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                조건 검색
+                            </th>
+                            <td class="search">
+                                <div class="period_box">
+                                    <select class="period_select">
+                                        <option>
+                                            제목
+                                        </option>
+                                        <option>
+                                            내용
+                                        </option>
+                                        <option>
+                                            작성자
+                                        </option>
+                                    </select>
+                                    <div class="com_input_box">
+                                        <input id="3" type="text" placeholder="검색어 입력">
+                                        <label for="3" class="blind">검색어 입력</label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- //com_table -->
+
+            </div>
+            <!-- //com_table_box -->
+
+            <div class="com_btn st">
+                <a href="#">초기화</a>
+                <a href="#">검색</a>
+            </div>
+
+            <div class="com_table_box st">
+                <div class="search_top">
+                    <span class="search_text">총 <em>100</em>개</span>
+                </div>
+                <!-- //search_top -->
+
+                <table class="com_table">
+                    <caption class="blind">오류 신고 목록</caption>
+                    <colgroup>
+                        <col width="5%">
+                        <col width="5%">
+                        <col width="8%">
+                        <col width="8%">
+                        <col width="10%">
+                        <col width="10%">
+                        <col width="8%">
+                        <col width="5%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>
+                            </th>
+                            <th>No</th>
+                            <th>작성자</th>
+                            <th>오류 신고 종류</th>
+                            <th>오류 내용</th>
+                            <th>등록일시</th>
+                            <th>답변 여부</th>
+                            <th>관리</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="com_chk_box">
+                                    <input id="chk2" type="checkbox" class="blind">
+                                    <label for="chk2"><span class="blind"></span></label>
+                                </div>
+                            </td>
+                            <td>100</td>
+                            <td>
+                                홍길동
+                            </td>
+                            <td>
+                                번역
+                            </td>
+                            <td>
+                                <div class="text_box">
+                                    번역 내용이 틀린것 같습니다
+                                </div>
+                            </td>
+                            <td>
+                                2022-04-30 10:22:13
+                            </td>
+                            <td>
+                                답변
+                            </td>
+                            <td>
+                                <a href="#" class="table_com_btn st">
+                                    관리
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="com_chk_box">
+                                    <input id="chk3" type="checkbox" class="blind">
+                                    <label for="chk3"><span class="blind"></span></label>
+                                </div>
+                            </td>
+                            <td>99</td>
+                            <td>
+                                홍길동
+                            </td>
+                            <td>
+                                번역
+                            </td>
+                            <td>
+                                <div class="text_box">
+                                    번역 내용이 틀린것 같습니다
+                                </div>
+                            </td>
+                            <td>
+                                2022-04-30 10:22:13
+                            </td>
+                            <td>
+                                미답변
+                            </td>
+                            <td>
+                                <a href="#" class="table_com_btn st">
+                                    관리
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="com_chk_box">
+                                    <input id="chk4" type="checkbox" class="blind">
+                                    <label for="chk4"><span class="blind"></span></label>
+                                </div>
+                            </td>
+                            <td>98</td>
+                            <td>
+                                홍길동
+                            </td>
+                            <td>
+                                기타
+                            </td>
+                            <td>
+                                <div class="text_box">
+                                    번역 내용이 틀린것 같습니다
+                                </div>
+                            </td>
+                            <td>
+                                2022-04-30 10:22:13
+                            </td>
+                            <td>
+                                답변
+                            </td>
+                            <td>
+                                <a href="#" class="table_com_btn st">
+                                    관리
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="com_chk_box">
+                                    <input id="chk5" type="checkbox" class="blind">
+                                    <label for="chk5"><span class="blind"></span></label>
+                                </div>
+                            </td>
+                            <td>97</td>
+                            <td>
+                                홍길동
+                            </td>
+                            <td>
+                                기타
+                            </td>
+                            <td>
+                                <div class="text_box">
+                                    번역 내용이 틀린것 같습니다
+                                </div>
+                            </td>
+                            <td>
+                                2022-04-30 10:22:13
+                            </td>
+                            <td>
+                                답변
+                            </td>
+                            <td>
+                                <a href="#" class="table_com_btn st">
+                                    관리
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="com_chk_box">
+                                    <input id="chk6" type="checkbox" class="blind">
+                                    <label for="chk6"><span class="blind"></span></label>
+                                </div>
+                            </td>
+                            <td>96</td>
+                            <td>
+                                홍길동
+                            </td>
+                            <td>
+                                번역
+                            </td>
+                            <td>
+                                <div class="text_box">
+                                    번역 내용이 틀린것 같습니다
+                                </div>
+                            </td>
+                            <td>
+                                2022-04-30 10:22:13
+                            </td>
+                            <td>
+                                답변
+                            </td>
+                            <td>
+                                <a href="#" class="table_com_btn st">
+                                    관리
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="com_chk_box">
+                                    <input id="chk7" type="checkbox" class="blind">
+                                    <label for="chk7"><span class="blind"></span></label>
+                                </div>
+                            </td>
+                            <td>95</td>
+                            <td>
+                                홍길동
+                            </td>
+                            <td>
+                                번역
+                            </td>
+                            <td>
+                                <div class="text_box">
+                                    번역 내용이 틀린것 같습니다
+                                </div>
+                            </td>
+                            <td>
+                                2022-04-30 10:22:13
+                            </td>
+                            <td>
+                                답변
+                            </td>
+                            <td>
+                                <a href="#" class="table_com_btn st">
+                                    관리
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="com_chk_box">
+                                    <input id="chk8" type="checkbox" class="blind">
+                                    <label for="chk8"><span class="blind"></span></label>
+                                </div>
+                            </td>
+                            <td>94</td>
+                            <td>
+                                홍길동
+                            </td>
+                            <td>
+                                번역
+                            </td>
+                            <td>
+                                <div class="text_box">
+                                    번역 내용이 틀린것 같습니다
+                                </div>
+                            </td>
+                            <td>
+                                2022-04-30 10:22:13
+                            </td>
+                            <td>
+                                답변
+                            </td>
+                            <td>
+                                <a href="#" class="table_com_btn st">
+                                    관리
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="com_chk_box">
+                                    <input id="chk9" type="checkbox" class="blind">
+                                    <label for="chk9"><span class="blind"></span></label>
+                                </div>
+                            </td>
+                            <td>93</td>
+                            <td>
+                                홍길동
+                            </td>
+                            <td>
+                                번역
+                            </td>
+                            <td>
+                                <div class="text_box">
+                                    번역 내용이 틀린것 같습니다
+                                </div>
+                            </td>
+                            <td>
+                                2022-04-30 10:22:13
+                            </td>
+                            <td>
+                                답변
+                            </td>
+                            <td>
+                                <a href="#" class="table_com_btn st">
+                                    관리
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="com_chk_box">
+                                    <input id="chk10" type="checkbox" class="blind">
+                                    <label for="chk10"><span class="blind"></span></label>
+                                </div>
+                            </td>
+                            <td>92</td>
+                            <td>
+                                홍길동
+                            </td>
+                            <td>
+                                번역
+                            </td>
+                            <td>
+                                <div class="text_box">
+                                    번역 내용이 틀린것 같습니다
+                                </div>
+                            </td>
+                            <td>
+                                2022-04-30 10:22:13
+                            </td>
+                            <td>
+                                답변
+                            </td>
+                            <td>
+                                <a href="#" class="table_com_btn st">
+                                    관리
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="com_chk_box">
+                                    <input id="chk11" type="checkbox" class="blind">
+                                    <label for="chk11"><span class="blind"></span></label>
+                                </div>
+                            </td>
+                            <td>91</td>
+                            <td>
+                                홍길동
+                            </td>
+                            <td>
+                                번역
+                            </td>
+                            <td>
+                                <div class="text_box">
+                                    번역 내용이 틀린것 같습니다
+                                </div>
+                            </td>
+                            <td>
+                                2022-04-30 10:22:13
+                            </td>
+                            <td>
+                                답변
+                            </td>
+                            <td>
+                                <a href="#" class="table_com_btn st">
+                                    관리
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- //com_table -->
+
+            </div>
+            <!-- //com_table_box -->
+
+            <div class="page_wrap">
+                <span class="page_text"><em>1</em> of 84 pages</span>
+                <div class="page_box">
+                    <button class="prev_first"><span class="blind"></span></button>
+                    <button class="prev"><span class="blind"></span></button>
+                    <ul class="page_list">
+                        <li>
+                            <a href="#" class="active">
+                                1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                4
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                5
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                6
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                7
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                8
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                9
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                10
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="next"><span class="blind"></span></button>
+                    <button class="next_last"><span class="blind"></span></button>
+                </div>
+                <!-- //page_box -->
+
+            </div>
+            <!-- //page_wrap -->
+
+            <div class="com_btn" style="margin: 100px 0">
+                <a href="#">수정하기</a>
+            </div>
+
+        </section>
+        <!-- //section -->
+
+    </div>
+    <!-- //content -->
+
+</main>

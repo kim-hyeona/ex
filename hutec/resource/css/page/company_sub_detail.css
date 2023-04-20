@@ -1,0 +1,60 @@
+#PAGE_VIEW{ /* 서브페이지 css 초기화하는 코드 */
+    display: block;
+    width: 100%;
+    position: relative;
+    top:10px; left: 50px;
+    /* background-color: aqua; */
+    overflow-y: scroll;
+    color:black;
+    padding: 20px;
+}
+
+
+div{
+    /* background-color: antiquewhite; */
+    width: 1240px;
+    margin: 0 auto;
+    
+}
+
+h3{
+    font-size: 20px;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 80%;
+}
+
+tbody{
+    margin: 5px;
+}
+
+tr{
+    line-height: 42.6px;
+}
+
+th , td{
+    font-size: 12px;
+    border: 1px solid var(--purple);
+    padding: 10px;
+    align-items: center;
+}
+
+tr > th:nth-of-type(1) {
+    font-weight: 500;
+    color:black;
+}
+
+a.btn{ 
+    display:block;
+    width: 176px;
+    height: 69px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+    background-color: var(--purple);
+    color:white;
+}

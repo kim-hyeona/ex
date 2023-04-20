@@ -86,31 +86,18 @@
 		<header>
 			<img class='meta-logo'src="resource/images/logo.png" alt="">
 			<ul class="header-menu flex-row-center">
-				<li>MENU</li>
-				<li>MENU</li>
-				<li>MENU</li>
-				<li>MENU</li>
-				<li>MENU</li>
-				<ul class="header-submenu drop-shadow-xl">
-					<li><a href="#/admin">관리자페이지</a></li>
-					<li>submenu</li>
-					<li>submenu</li>
-					<li>submenu</li>
-					<li>submenu</li>
-					<li>submenu</li>
-					<li>submenu</li>
-					<li>submenu</li>
-					<li>submenu</li>
-					<li>submenu</li>
-					<li>submenu</li>
-					<li>submenu</li>
-					<li>submenu</li>
-					<li>submenu</li>
-				</ul>
+				<li><a href="#/admin">관리모드 활성화</a></li>
+				<li><a href="">대시보드</a></li>
+				<li><a href=""></a>회원정보</li>
+				<li><a href=""></a>블러그 관리</li>
+				<li><a href=""></a>번역물 관리</li>
+				<li><a href=""></a>통계</li>
 			</ul>
 		</header>
+
+
 		<ul class="h-full sidemenu" style="font-size: 10px;">
-			<li><i name="DASHBOARD" class="fa-solid fa-table"></i></li>
+			<li><i name="DASHBOARD" class="fa-solid fa-table"></i><a href="#/admin">관리자</a></li>
 			<li><i name="TRANS_ADMIN" class="fa-solid fa-language"></i> 번역</li>
 			<li><i name="MEMBER_ADMIN" class="fa-solid fa-user"></i> 회원</li>
 			<li><i name="CAL_ADMIN" class="fa-solid fa-calculator"></i> 정산</li>
@@ -123,6 +110,7 @@
 
 	<!-- PAGE_VIEW : 페이지 표시되는곳 -->
 	<section id="PAGE_VIEW" class="fixed w-full bottom-16 flex-column-center">
+		
 	</section>
 	
 
@@ -147,5 +135,10 @@
 $(function(){
   console.log('helloooo');
 });
+
+// window.addEventListener("DOMContentLoaded", function() {
+//       let menu = document.querySelector(".sidemenu");
+//       menu.style.display = "none";
+//     });
 </script>
 </html>

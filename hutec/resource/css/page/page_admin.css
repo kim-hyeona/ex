@@ -38,8 +38,12 @@ table > td > :checked{
 }
 
 table td {
-  padding: 10px;
+  padding: 10px 0;
 }
+
+table tbody td img {
+ display: inline-block;
+} 
 
 /* 번역관리 컨텐츠들 */
 
@@ -61,16 +65,16 @@ table td {
 
 #TRANS_ADMIN_NAV{
   display: flex;
-  justify-content: space-evenly;
   margin: 15px 0;
   
 }
 
 #TRANS_ADMIN_NAV > li{
-    min-width: 120px;
-    width: 12.5%;
+    min-width: 115px;
+    /* width: 12.5%; */
     border: 1px solid var(--purple);
     text-align: center;
+    margin-left: 15px;
 }
 
 #TRANS_ADMIN_NAV > li:hover {
@@ -85,15 +89,15 @@ table td {
   overflow-x: scroll;
 }
 
+
 #TRANS_ADMIN_CONTENT table{
-width: 500vw;
+width: 400vw;
 font-size: 12px;
 }
 
 
 #TRANS_ADMIN_CONTENT table > thead > tr td {
-  padding: 5px;
-  height: 50px; width: 200px;
+  height: 20px; width: 100px;
     border-left: 1px solid var(--purple);
     border-top: 1px solid var(--purple) ;
     text-align: center;
@@ -103,6 +107,8 @@ font-size: 12px;
   border-top: 1px solid var(--purple);
   text-align: center;
 }
+
+
 .pagenum{
   width: 476px;
   margin: 0 auto;
@@ -122,6 +128,25 @@ font-size: 12px;
   margin: 0 15px;
 }
 
+#MEMBER_ADMIN_NAV {
+  display: flex;
+  margin: 15px 0;
+
+}
+
+#MEMBER_ADMIN_NAV > li{
+  min-width: 206px;
+  border: 1px solid var(--purple);
+  text-align: center;
+  padding: 0 10px;
+  margin-left: 10px;
+}
+
+#MEMBER_ADMIN_NAV > li:hover {
+background-color: var(--purple);
+color:white;
+cursor: pointer;
+}
 #MEMBER_ADMIN_CONTENT button{
   background-color: var(--purple);
   color: white;
@@ -131,11 +156,29 @@ font-size: 12px;
   border-radius: 5px;
 }
 
-#MEMBER_ADMIN_CONTENT table{
-  width: 100vw;
-  margin: 20px auto ;
-  font-size: 12px;
+#MEMBER_ADMIN_CONTENT article{
+  height: 400px;
+  margin: auto;
+  overflow-y: scroll;
 }
+
+
+#MEMBER_ADMIN_CONTENT table{
+  width: 100%;
+  margin: 20px 0;
+  font-size: 12px;
+  border: 1px solid var(--purple);
+}
+
+#MEMBER_ADMIN_CONTENT table td{
+  min-width: 80px;
+  
+}
+#MEMBER_ADMIN_CONTENT table th{
+  width: 108px;
+  padding: 20px 0;
+  border: 1px solid var(--purple);
+}  
 
 #MEMBER_ADMIN_CONTENT table thead td {
 border-right: 1px solid var(--purple);
@@ -143,15 +186,9 @@ border-right: 1px solid var(--purple);
 
 #MEMBER_ADMIN_CONTENT table tr td{
   text-align: center;
-  padding: 10px;
   border-bottom: var(--purple) 1px solid;
 }
 
-#MEMBER_ADMIN_CONTENT article{
-  width: 97%;
-  margin: auto;
-  overflow-x: scroll;
-}
 
 /* 수익관리 컨텐츠 */
 #BENEFIT_ADMIN_CONTENT h4{
@@ -266,6 +303,20 @@ border-right: 1px solid var(--purple);
   border-radius: 5px;
 }
 
+#CAL_ADMIN_NAV {
+  display: flex;
+  margin: 15px 0;
+
+}
+
+#CAL_ADMIN_NAV > li{
+  min-width: 170px;
+  border: 1px solid var(--purple);
+  text-align: center;
+  padding: 0 10px;
+  margin-left: 10px;
+}
+
 #CAL_ADMIN_CONTENT table{
   width: 150vw;
   margin: 20px auto ;
@@ -305,20 +356,89 @@ border-right: 1px solid var(--purple);
   border-radius: 5px;
 }
 
+#OPERATION_ADMIN_NAV {
+  display: flex;
+  margin: 15px 0;
+
+}
+
+#OPERATION_ADMIN_NAV > li{
+  min-width: 170px;
+  border: 1px solid var(--purple);
+  text-align: center;
+  padding: 0 10px;
+  margin-left: 10px;
+}
+
+
 #OPERATION_ADMIN_CONTENT table{
-  width: 80vw;
+  width: 100%;
   margin: 20px auto ;
   font-size: 12px;
+  border: var(--purple) 1px solid;
 }
 
 #OPERATION_ADMIN_CONTENT table tr td{
   text-align: center;
   padding: 5px;
   border-bottom: var(--purple) 1px solid;
+
+}
+
+#OPERATION_ADMIN_CONTENT label {
 }
 
 #OPERATION_ADMIN_CONTENT article{
-  width: 97%;
+  height: 400px;
+  width: 97%; 
   margin: auto;
   overflow-x: scroll;
 }
+
+
+/* 블로그 관리 컨텐츠 */
+
+#BLOG_ADMIN_CONTENT {
+  /* overflow-y: scroll; */
+}
+
+#BLOG_ADMIN_CONTENT h4{
+  font-size: 25px;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+#BLOG_ADMIN_CONTENT article {
+  overflow-y: scroll;
+  height: 600px;
+
+}
+
+#BLOG_ADMIN_CONTENT a{
+  background-color: var(--purple);
+  color:white;
+  padding: 7px;
+  border-radius: 8px;
+}
+
+#BLOG_ADMIN_CONTENT article .BLOG_BOX{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+#BLOG_ADMIN_CONTENT article .BLOG {
+  border: 1px solid #AEAEAE;
+  width: 510px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#BLOG_ADMIN_CONTENT article .BLOG_TXT{
+width: 180px;
+}
+

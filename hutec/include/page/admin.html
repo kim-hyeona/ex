@@ -90,16 +90,119 @@
 						<li id="TRANS_ADMIN_COMPANY_ACCOUNTS">번역사 결산</li>
 					</ul>
 					<article>
+							
 						<table>
 							<thead>
-								<tr>
-									<td class="all_data">No</td>
-									<td class="all_data"><input class="table_check" type="checkbox" name="check" ></td>
-									<td class="all_data">회원유형 <br>(회원상태/회원제)</td>
-									<td class="all_data">이름 <br>(성별/생년월일)</td>
-									<td class="all_data">이메일  <br>휴대폰</td>
+									<th class="all_data"><input id="CHECK_NORMAL110" type="checkbox"><label for="CHECK_NORMAL110"></label></th>
+									<th class="all_data">이름<br>(성별/생년월일)</th>
+									<th class="all_data">이메일 <br>휴대폰</th>
 									<!-- 모든 테이블에 있는 값 -->
+								
+									<th class="user_data">회원No</th>
+									<th class="user_data">주소</th>
+									<th class="user_data">가입일시  <br>가입채널</th>
+									<th class="user_data">최근 로그인 <br>(최근 체류시간)</th>
+									<th class="user_data">활동구독형</th>
+									<th class="user_data">부가결제내역(부가2)</th>
+									<th class="user_data">번역 서비스 이용 건수</th>
+									<th class="user_data">활동 현황</th>
+									<th class="user_data">원 상담</th>
+									<!-- 여기까지 회원정보 -->
+
+									<th class="work_data">문서번호</th>
+									<th class="work_data">최근 의뢰일 <br> 최종 종료일</th>
+									<th class="work_data">제목<br>(파일명)</th>
+									<th class="work_data">서비스 유형</th>
+									<th class="work_data">업무 유형 -> 추가선택</th>
+									<th class="work_data">출발어 -> 도착어</th>
+									<th class="work_data">결제상태</th>
+									<th class="work_data">번역상태 <br> 번역의뢰</th>
+									<th class="work_data">문서 최종파일</th>
+									<th class="work_data">작업 분량</th>
+									<th class="work_data">마감 요청일 <br> 작업소요시간</th>
+									<th class="work_data">번역사</th>
+									<th class="work_data">번역 비용</th>
+									<th class="work_data">부가서비스1  <br>부가서비스2</th>
+									<th class="work_data">도착 번역물 다운</th>
+									<th class="work_data">출발 번역물 다운</th>
+									<!-- 여기까지가 번역물관리 -->
+
+									<th class="stats_data">서비스 유형</th>
+									<th class="stats_data">총 합산 건수</th>
+									<th class="stats_data">번역 문서</th>
+									<th class="stats_data">STT</th>
+									<th class="stats_data">TTS</th>
+									<th class="stats_data">영상</th>
+									<th class="stats_data">유튜브</th>
+									<th class="stats_data">STS-동시통역</th>
+									<!-- 사용자 통계 -->
+
+									<th class="price_data">부가비용</th>
+									<th class="price_data">최초 결제일 <br> 최근 결제일</th>
+									<th class="price_data">총 결제금액 할인금액</th>
+									<th class="price_data">충전(+)/사용내역(-) [잔액]</th>
+									<th class="price_data">서비스 사용 추가 선택</th>
+									<th class="price_data">부가결제내역</th>
+									<th class="price_data">부가비용 회원결제상담</th>
+									<th class="price_data">결제상태 결제방법 (세금계산서)</th>
+									<th class="price_data">카드명(카드사) 카드번호</th>
+									<th class="price_data">승인 번호</th>
+									<th class="price_data">환불(입금여부)환불일</th>
+									<th class="price_data">환불 금액</th>
+									<th class="price_data">예금주(은행명/ 환불계좌번호)</th>
+									<th class="price_data">환불사유</th>
+									<th class="price_data">원 결제 메모</th>
+									<!-- 여기까지가 회원결제 정보  -->
+
+									<th class="company_price_data">번역사 진행일 번역사 입금일</th>
+									<th class="company_price_data">번역사 금액 번역사추가비용</th>
+									<th class="company_price_data">최종 정산액 번역사추가비용</th>
+									<th class="company_price_data">최종 정산액 할인 금액</th>
+									<th class="company_price_data">번역사 잔액</th>
+									<th class="company_price_data">영업 수익% 수수료 비율</th>
+									<th class="company_price_data">지급상태/세금공제(세금계산서)</th>
+									<th class="company_price_data">사업자 (주민번호) 사업장첨부</th>
+									<th class="company_price_data">예금주(은행명/ 번역사계좌번호)</th>
+									<th class="company_price_data">그외에 비용 + 가 기능</th>
+									<th class="company_price_data">번 결제</th>
+									<!-- 번역사 결제정보 -->
+
+
+									<th class="company_detailed">회원유형(회원 상태/회원제)</th>
+									<th class="company_detailed">가입일시 가입채널</th>
+									<th class="company_detailed">번역가 유형 번역 분야</th>
+									<th class="company_detailed">번역 언어 경력/(레벨)</th>
+									<th class="company_detailed">번역 가능사 계약서</th>
+									<th class="company_detailed">회사명</th>
+									<th class="company_detailed">입사일 퇴사일</th>
+									<th class="company_detailed">최근로그인(최근 체류시간)</th>
+									<th class="company_detailed">부가결제내역</th>
+									<th class="company_detailed">상세보기</th>
+									<th class="company_detailed">사 상담</th>
+									<!-- 번역사 세부정보 -->
+
 									
+									<th class="company_accounts">번역사 <br> 입금일 <br>결제일</th>
+									<th class="company_accounts">결제금액 <br> 할인금액</th>
+									<th class="company_accounts">번역사금액 <br> 최종정산금액</th>
+									<th class="company_accounts">영업수익% <br> 수수료비율</th>
+									<th class="company_accounts">총 매출금액</th>
+									<th class="company_accounts">월정산 <br> 년정상</th>
+									<th class="company_accounts">1:1 문의 견적서</th>
+									<th class="company_accounts">약관현황 채팅설정</th>
+									<th class="company_accounts">평점/리뷰 상세</th>
+									<th class="company_accounts">관리자메모</th>
+									<!-- 번역사 결산 -->
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="all_data"><input id="CHECK_NORMAL11" type="checkbox"><label for="CHECK_NORMAL11"></label></td>
+									<td class="all_data">이름<br>(성별/생년월일)</td>
+									<td class="all_data">이메일 <br>휴대폰</td>
+									<!-- 모든 테이블에 있는 값 -->
+								
+									<td class="user_data">회원No</td>
 									<td class="user_data">주소</td>
 									<td class="user_data">가입일시  <br>가입채널</td>
 									<td class="user_data">최근 로그인 <br>(최근 체류시간)</td>
@@ -110,14 +213,9 @@
 									<td class="user_data">원 상담</td>
 									<!-- 여기까지 회원정보 -->
 
-									<!-- <td class="work_data">No</td>
-									<td class="work_data"><input class="table_check" type="checkbox" name="check" ></td> -->
-									<td class="work_data">회원유형 <br>(회원상태/회원제)</td>
-									<td class="work_data">이름 <br>(성별/생년월일)</td>
-									<td class="work_data">이메일  <br>휴대폰</td>
 									<td class="work_data">문서번호</td>
-									<td class="work_data">최근 의뢰일 <br> 최종 완료일</td>
-									<td class="work_data">제목(파일명)</td>
+									<td class="work_data">최근 의뢰일 <br> 최종 종료일</td>
+									<td class="work_data">제목<br>(파일명)</td>
 									<td class="work_data">서비스 유형</td>
 									<td class="work_data">업무 유형 -> 추가선택</td>
 									<td class="work_data">출발어 -> 도착어</td>
@@ -133,11 +231,6 @@
 									<td class="work_data">출발 번역물 다운</td>
 									<!-- 여기까지가 번역물관리 -->
 
-									<!-- <td class="stats_data">No</td>
-									<td class="stats_data"><input class="table_check" type="checkbox" name="check" ></td> -->
-									<td class="stats_data">회원유형 <br>(회원상태/회원제)</td>
-									<td class="stats_data">이름 <br>(성별/생년월일)</td>
-									<td class="stats_data">이메일  <br>휴대폰</td>
 									<td class="stats_data">서비스 유형</td>
 									<td class="stats_data">총 합산 건수</td>
 									<td class="stats_data">번역 문서</td>
@@ -148,11 +241,6 @@
 									<td class="stats_data">STS-동시통역</td>
 									<!-- 사용자 통계 -->
 
-									<!-- <td class="price_data">No</td>
-									<td class="price_data"><input class="table_check" type="checkbox" name="check" ></td> -->
-									<td class="price_data">회원유형 <br>(회원상태/회원제)</td>
-									<td class="price_data">이름 <br>(성별/생년월일)</td>
-									<td class="price_data">이메일  <br>휴대폰</td>
 									<td class="price_data">부가비용</td>
 									<td class="price_data">최초 결제일 <br> 최근 결제일</td>
 									<td class="price_data">총 결제금액 할인금액</td>
@@ -170,11 +258,6 @@
 									<td class="price_data">원 결제 메모</td>
 									<!-- 여기까지가 회원결제 정보  -->
 
-									<!-- <td class="company_price_data">No</td>
-									<td class="company_price_data"><input class="table_check" type="checkbox" name="check" ></td> -->
-									<td class="company_price_data">회원유형 <br>(회원상태/회원제)</td>
-									<td class="company_price_data">이름 <br>(성별/생년월일)</td>
-									<td class="company_price_data">이메일  <br>휴대폰</td>
 									<td class="company_price_data">번역사 진행일 번역사 입금일</td>
 									<td class="company_price_data">번역사 금액 번역사추가비용</td>
 									<td class="company_price_data">최종 정산액 번역사추가비용</td>
@@ -188,11 +271,7 @@
 									<td class="company_price_data">번 결제</td>
 									<!-- 번역사 결제정보 -->
 
-									<!-- <td class="company_detailed">No</td>
-									<td class="company_detailed"><input class="table_check" type="checkbox" name="check" ></td> -->
-									<td class="company_detailed">회원유형 <br>(회원상태/회원제)</td>
-									<td class="company_detailed">이름 <br>(성별/생년월일)</td>
-									<td class="company_detailed">이메일  <br>휴대폰</td>
+
 									<td class="company_detailed">회원유형(회원 상태/회원제)</td>
 									<td class="company_detailed">가입일시 가입채널</td>
 									<td class="company_detailed">번역가 유형 번역 분야</td>
@@ -207,120 +286,7 @@
 									<!-- 번역사 세부정보 -->
 
 									
-									<td class="company_accounts">번역사 <br> 입금일 br</td>
-									<td class="company_accounts">결제금액 <br> 할인금액</td>
-									<td class="company_accounts">번역사금액 <br> 최종정산금액</td>
-									<td class="company_accounts">영업수익% <br> 수수료비율</td>
-									<td class="company_accounts">총 매출금액</td>
-									<td class="company_accounts">월정산 <br> 년정상</td>
-									<td class="company_accounts">1:1 문의 견적서</td>
-									<td class="company_accounts">약관현황 채팅설정</td>
-									<td class="company_accounts">평점/리뷰 상세</td>
-									<td class="company_accounts">관리자메모</td>
-									<!-- 번역사 결산 -->
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="user_data">1</td>
-									<td class="user_data"><input class="table_check" type="checkbox" name="check" ></td>
-									<td class="user_data">일반회원(정산/구독)</td>
-									<td class="user_data">홍길동(남/21)</td>
-									<td class="user_data">exam@email.com (010-1234-5678)</td>
-									<td class="user_data">서울시 마포구 공덕동 백범로</td>
-									<td class="user_data">YY-MM-DD HH:MM 이메일 (PC)</td>
-									<td class="user_data">YY-MM-DD HH:MM (30분)</td>
-									<td class="user_data">활동구독형</td>
-									<td class="user_data">부가결제내역(부가2)</td>
-									<td class="user_data">8</td>
-									<td class="user_data">상세</td>
-									<td class="user_data">상담</td>
-									<!-- 여기까지 회원정보 -->
-
-									<td class="work_data">10</td>
-									<td class="work_data"><input class="table_check" type="checkbox" name="check" ></td>
-									<td class="work_data">YY-MM-DD HH:MM YY-MM-DD HH:MM</td>
-									<td class="work_data">다운로드</td>
-									<td class="work_data">AI</td>
-									<td class="work_data">업무 유형 -> 추가선택</td>
-									<td class="work_data">영 -> 한 다운</td>
-									<td class="work_data">승인</td>
-									<td class="work_data">완료 의뢰요청</td>
-									<td class="work_data">긴급 미리보기</td>
-									<td class="work_data">글자수 5000 단어수 1000</td>
-									<td class="work_data">YY-MM-DD HH:MM 2d</td>
-									<td class="work_data">AI</td>
-									<td class="work_data">100,000</td>
-									<td class="work_data">에디팅 도착T 번역</td>
-									<td class="work_data">도착 번역물 다운</td>
-									<td class="work_data">출발 번역물 다운</td>
-									<!-- 여기까지가 번역물관리 -->
-
-
-									<td class="stats_data">1</td>
-									<td class="stats_data"><input class="table_check" type="checkbox" name="check" ></td>
-									<td class="stats_data">원본→ AI 원본(휴먼)</td>
-									<td class="stats_data">21건(100건)</td>
-									<td class="stats_data">3건(5건)</td>
-									<td class="stats_data">3건(2건)</td>
-									<td class="stats_data">3건(5건)</td>
-									<td class="stats_data">3건(5건)</td>
-									<td class="stats_data">3건(5건)</td>
-									<td class="stats_data">3건(5건)</td>
-									<!-- 사용자 통계 -->
-
-									<td class="price_data">1</td>
-									<td class="price_data"><input class="table_check" type="checkbox" name="check" ></td>
-									<td class="price_data">10000</td>
-									<td class="price_data">YY-MM-DD HH:MM YY-MM-DD HH:MM</td>
-									<td class="price_data">100,000 50,000</td>
-									<td class="price_data">(+)100,000 [50,000]</td>
-									<td class="price_data">서비스 사용 추가 선택</td>
-									<td class="price_data">부가결제내역</td>
-									<td class="price_data">부가비용 회원결제상담</td>
-									<td class="price_data">승인/카드(발급)</td>
-									<td class="price_data">신한카드 4534 9128 9647 3231</td>
-									<td class="price_data">74257808</td>
-									<td class="price_data">완료(본인취소)YY-MM-DD</td>
-									<td class="price_data">10,000</td>
-									<td class="price_data">홍길동 (하나/901-910014-57732)</td>
-									<td class="price_data">환불사유</td>
-									<td class="price_data">원 결제 메모</td>
-									<!-- 여기까지가 회원결제 정보  -->
-
-									<td class="company_price_data">1</td>
-									<td class="company_price_data"><input class="table_check" type="checkbox" name="check" ></td>
-									<td class="company_price_data">YY-MM-DD YY-MM-DD</td>
-									<td class="company_price_data">100,000 50,000</td>
-									<td class="company_price_data">100,000 50,000</td>
-									<td class="company_price_data">100,000 50,000</td>
-									<td class="company_price_data">100,000</td>
-									<td class="company_price_data">50% 20%</td>
-									<td class="company_price_data">대기/미발금(0)</td>
-									<td class="company_price_data">사업자 (주민번호) 사업장첨부</td>
-									<td class="company_price_data">홍길동 (하나/901-910014-57732)</td>
-									<td class="company_price_data">그외에 비용 + 가 기능</td>
-									<td class="company_price_data">번 결제</td>
-									<!-- 번역사 결제정보 -->
-
-									<td class="company_detailed">1</td>
-									<td class="company_detailed"><input class="table_check" type="checkbox" name="check" ></td>
-									<td  class="company_detailed">일반회원 (정산/구독)</td>
-									<td  class="company_detailed">YY-MM-DD HH:MM 이메일 (PC)</td>
-									<td  class="company_detailed">개인(감수 전문가)정치</td>
-									<td  class="company_detailed">영<한3년/(상)</td>
-									<td  class="company_detailed">오전 0</td>
-									<td  class="company_detailed">회사명</td>
-									<td  class="company_detailed">YY-MM-DD YY-MM-DD</td>
-									<td  class="company_detailed">YY-MM-DD HH:MM (30분)</td>
-									<td  class="company_detailed">부가결제 내역</td>
-									<td  class="company_detailed">상세보기</td>
-									<td  class="company_detailed">사 상담</td>
-									<!-- 번역사 세부정보 -->
-
-									<td class="company_accounts">1</td>
-									<td class="company_accounts"><input class="table_check" type="checkbox" name="check" ></td>
-									<td class="company_accounts">번역사 <br> 입금일 br</td>
+									<td class="company_accounts">번역사 <br> 입금일 <br>결제일</td>
 									<td class="company_accounts">결제금액 <br> 할인금액</td>
 									<td class="company_accounts">번역사금액 <br> 최종정산금액</td>
 									<td class="company_accounts">영업수익% <br> 수수료비율</td>
@@ -365,56 +331,386 @@
 			<section id="MEMBER_ADMIN_CONTENT">
 				<h4>총 100개</h4>
 					<button>검색 결과 엑셀 다운로드</button><button>선택 항목 다운로드</button>
+					<ul id="MEMBER_ADMIN_NAV">
+						<li id="MEMBER_ADMIN_ALL">전체회원</li>
+						<li id="MEMBER_ADMIN_USER">일반회원관리</li>
+						<li id="MEMBER_ADMIN_TRNASLATION">번역사 신청관리</li>
+						<li id="MEMBER_ADMIN_USER_STATISTICS">번역사 회원관리</li>
+						<li id="MEMBER_ADMIN_USER_PRICE">기업번역 신청관리(B to B)</li>
+						<li id="MEMBER_ADMIN_COMPANY_PRICE">관리자 회원</li>
+					</ul>
 					<article>
-					<table>
+					<!-- 일반 회원 관리 -->
+					<table class="GENERAL_USER">
 						<thead>
-							<tr>
-								<td>No</td>
-								<td><input type="checkbox"class="table_check" name="check"></td>
-								<td>이름/성별/생년월일</td>
-								<td>이메일 휴대폰</td>
-								<td>주소</td>
-								<td>의뢰일 최종완료일</td>
-								<td>문서번호</td>
-								<td>서비스 유형 번역물 유형</td>
-								<td>출발어 -> 도착어</td>
-								<td>결제일</td>
-								<td>결제금액</td>
-								<td>할인금액</td>
-								<td>부가비용</td>
-								<td>상태방식</td>
-								<td>결제일 반역사 입금일</td>
-								<td>부가 서비스1 / 서비스2</td>
-								<td>할인이유</td>
-								<td>환불(입금여부)환불일</td>
-								<td>환불금액</td>
-								<td>특이사항</td>
+								<th class="all_data">No</th>
+								<th><input id="CHECK_NORMAL9" type="checkbox"><label for="CHECK_NORMAL9"></label></th>
+								<th>가입채널</th>
+								<th>이름</th>
+								<th>성별</th>
+								<th>나이</th>
+								<th>회원유형</th>
+								<th>가입일</th>
+								<th>최근로그인</th>
+								<th>최근 체류시간</th>
+								<th>번역 서비스 이용 건수</th>
+								<th>회원 상태</th>
+								<th>활동 현황</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>1</td>
-								<td><input type="checkbox"class="table_check" name="check"></td>
-								<td>홍길동(남/21)</td>
-								<td>exam@email.com (010-1234-5678)</td>
-								<td>서울시 마포구 공덕동 백범로</td>
-								<td>yy-mm-dd / yy-mm-dd</td>
-								<td>1</td>
-								<td>원본 -> ai번역(휴먼)/휴먼</td>
-								<td>한국어 -> 기타</td>
-								<td>yy-mm-dd</td>
-								<td>100,000</td>
-								<td>20,000</td>
-								<td>0</td>
-								<td>상태방식</td>
-								<td>yy-mm-dd / yy-mm-dd</td>
-								<td>에디팅 도착 T번역 감수</td>
-								<td>-</td>
-								<td>입금됨/yy-mm-dd</td>
-								<td>120,000</td>
-								<td>한글입숨</td>
+								<td>No</td>
+								<td><input id="CHECK_NORMAL12" type="checkbox"><label for="CHECK_NORMAL12"></label></td>
+								<td>가입채널</td>
+								<td>이름</td>
+								<td>성별</td>
+								<td>나이</td>
+								<td>회원유형</td>
+								<td>가입일</td>
+								<td>최근로그인</td>
+								<td>최근 체류시간</td>
+								<td>번역 서비스 이용 건수</td>
+								<td>회원 상태</td>
+								<td>활동 현황</td>
 							</tr>
 						</tbody>
+						<tbody>
+							<tr>
+								<td>No</td>
+								<td><input id="CHECK_NORMAL8" type="checkbox"><label for="CHECK_NORMAL8"></label></td>
+								<td>가입채널</td>
+								<td>이름</td>
+								<td>성별</td>
+								<td>나이</td>
+								<td>회원유형</td>
+								<td>가입일</td>
+								<td>최근로그인</td>
+								<td>최근 체류시간</td>
+								<td>번역 서비스 이용 건수</td>
+								<td>회원 상태</td>
+								<td>활동 현황</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>No</td>
+								<td><input id="CHECK_NORMAL13" type="checkbox"><label for="CHECK_NORMAL13"></label></td>
+								<td>가입채널</td>
+								<td>이름</td>
+								<td>성별</td>
+								<td>나이</td>
+								<td>회원유형</td>
+								<td>가입일</td>
+								<td>최근로그인</td>
+								<td>최근 체류시간</td>
+								<td>번역 서비스 이용 건수</td>
+								<td>회원 상태</td>
+								<td>활동 현황</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- 일반 회원 관리 -->
+
+
+					<!-- 번역사회원 신청-->
+					<table class="COMPANY_USER_SUB">
+						<thead>
+							<tr>
+								<th>No</th>
+								<th><input id="CHECK_NORMAL14" type="checkbox"><label for="CHECK_NORMAL14"></label></th>
+								<th>가입채널</th>
+								<th>이름</th>
+								<th>성별</th>
+								<th>나이</th>
+								<th>회원유형</th>
+								<th>번역언어</th>
+								<th>전문 분야</th>
+								<th>학력</th>
+								<th>신청 일시</th>
+								<th>신청상태</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>No</td>
+								<td><input id="CHECK_NORMAL15" type="checkbox"><label for="CHECK_NORMAL15"></label></td>
+								<td>이메일</td>
+								<td>홍길동</td>
+								<td>남</td>
+								<td>23</td>
+								<td>일반회원</td>
+								<td>한->일본어</td>
+								<td>회계</td>
+								<td>대졸</td>
+								<td>yy-mm-dd hh:mm</td>
+								<td> <a href="#/detail/companysub">승인하기</a> </td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>No</td>
+								<td><input id="CHECK_NORMAL16" type="checkbox"><label for="CHECK_NORMAL16"></label></td>
+								<td>이메일</td>
+								<td>홍길동</td>
+								<td>남</td>
+								<td>23</td>
+								<td>일반회원</td>
+								<td>한->일본어</td>
+								<td>회계</td>
+								<td>대졸</td>
+								<td>yy-mm-dd hh:mm</td>
+								<td> <a href="#/detail/companysub">승인하기</a> </td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>No</td>
+								<td><input id="CHECK_NORMAL17" type="checkbox"><label for="CHECK_NORMAL17"></label></td>
+								<td>이메일</td>
+								<td>홍길동</td>
+								<td>남</td>
+								<td>23</td>
+								<td>일반회원</td>
+								<td>한->일본어</td>
+								<td>회계</td>
+								<td>대졸</td>
+								<td>yy-mm-dd hh:mm</td>
+								<td> <a href="#/detail/companysub">승인하기</a></td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>No</td>
+								<td><input id="CHECK_NORMAL18" type="checkbox"><label for="CHECK_NORMAL18"></label></td>
+								<td>이메일</td>
+								<td>홍길동</td>
+								<td>남</td>
+								<td>23</td>
+								<td>일반회원</td>
+								<td>한->일본어</td>
+								<td>회계</td>
+								<td>대졸</td>
+								<td>yy-mm-dd hh:mm</td>
+								<td><a href="#/detail/companysub">승인하기</a></td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>No</td>
+								<td><input id="CHECK_NORMAL19" type="checkbox"><label for="CHECK_NORMAL19"></label></td>
+								<td>이메일</td>
+								<td>홍길동</td>
+								<td>남</td>
+								<td>23</td>
+								<td>일반회원</td>
+								<td>한->일본어</td>
+								<td>회계</td>
+								<td>대졸</td>
+								<td>yy-mm-dd hh:mm</td>
+								<td><a href="#/detail/companysub">승인하기</a></td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- 번역사회원 신청-->
+
+					<!-- 번역사 회원 -->
+					<table class="COMPANY_USER">
+						<thead>
+							<tr>
+								<th>No</th>
+								<th><input id="CHECK_NORMAL20" type="checkbox"><label for="CHECK_NORMAL20"></label></th>
+								<th>이메일</th>
+								<th>이름</th>
+								<th>회원유형</th>
+								<th>번역 언어</th>
+								<th>전문분야</th>
+								<th>학력</th>
+								<th>번역회수</th>
+								<th>번역기능</th>
+								<th>판매액</th>
+								<th>관리</th>
+							</tr>
+						</thead>
+						<tbody>
+							<td>No</td>
+								<td><input id="CHECK_NORMAL21" type="checkbox"><label for="CHECK_NORMAL21"></label></td>
+								<td>이메일</td>
+								<td>이름</td>
+								<td>회원유형</td>
+								<td>번역 언어</td>
+								<td>전문분야</td>
+								<td>학력</td>
+								<td>번역회수</td>
+								<td>번역기능</td>
+								<td>판매액</td>
+								<td>관리</td>
+						</tbody>
+						<tbody>
+							<td>No</td>
+								<td><input id="CHECK_NORMAL22" type="checkbox"><label for="CHECK_NORMAL22"></label></td>
+								<td>이메일</td>
+								<td>이름</td>
+								<td>회원유형</td>
+								<td>번역 언어</td>
+								<td>전문분야</td>
+								<td>학력</td>
+								<td>번역회수</td>
+								<td>번역기능</td>
+								<td>판매액</td>
+								<td>관리</td>
+						</tbody>
+						<tbody>
+							<td>No</td>
+								<td><input id="CHECK_NORMAL23" type="checkbox"><label for="CHECK_NORMAL23"></label></td>
+								<td>이메일</td>
+								<td>이름</td>
+								<td>회원유형</td>
+								<td>번역 언어</td>
+								<td>전문분야</td>
+								<td>학력</td>
+								<td>번역회수</td>
+								<td>번역기능</td>
+								<td>판매액</td>
+								<td>관리</td>
+						</tbody>
+						<tbody>
+							<td>No</td>
+								<td><input id="CHECK_NORMAL24" type="checkbox"><label for="CHECK_NORMAL24"></label></td>
+								<td>이메일</td>
+								<td>이름</td>
+								<td>회원유형</td>
+								<td>번역 언어</td>
+								<td>전문분야</td>
+								<td>학력</td>
+								<td>번역회수</td>
+								<td>번역기능</td>
+								<td>판매액</td>
+								<td>관리</td>
+						</tbody>
+					</table>
+					<!-- 번역사 회원 -->
+					
+					<!-- 기업회원 -->
+					<table class="CORPORATION_USER">
+						<thead>
+							<th>No</th>
+							<th><input id="CHECK_NORMAL25" type="checkbox"><label for="CHECK_NORMAL25"></label></th>
+							<th>회사명</th>
+							<th>담당자이메일</th>
+							<th>담당자연락처</th>
+							<th>예산</th>
+							<th>사용안함</th>
+							<th>신청일시</th>
+							<th>관리</th>
+						</thead>
+						<tbody>
+							<td>No</td>
+							<td><input id="CHECK_NORMAL8" type="checkbox"><label for="CHECK_NORMAL8"></label></td>
+							<td>회사명</td>
+							<td>담당자이메일</td>
+							<td>담당자연락처</td>
+							<td>예산</td>
+							<td>사용안함</td>
+							<td>신청일시</td>
+							<td>관리</td>
+						</tbody>
+						<tbody>
+							<td>No</td>
+							<td><input id="CHECK_NORMAL8" type="checkbox"><label for="CHECK_NORMAL8"></label></td>
+							<td>회사명</td>
+							<td>담당자이메일</td>
+							<td>담당자연락처</td>
+							<td>예산</td>
+							<td>사용안함</td>
+							<td>신청일시</td>
+							<td>관리</td>
+						</tbody>
+						<tbody>
+							<td>No</td>
+							<td><input id="CHECK_NORMAL8" type="checkbox"><label for="CHECK_NORMAL8"></label></td>
+							<td>회사명</td>
+							<td>담당자이메일</td>
+							<td>담당자연락처</td>
+							<td>예산</td>
+							<td>사용안함</td>
+							<td>신청일시</td>
+							<td>관리</td>
+						</tbody>
+						<tbody>
+							<td>No</td>
+							<td><input id="CHECK_NORMAL8" type="checkbox"><label for="CHECK_NORMAL8"></label></td>
+							<td>회사명</td>
+							<td>담당자이메일</td>
+							<td>담당자연락처</td>
+							<td>예산</td>
+							<td>사용안함</td>
+							<td>신청일시</td>
+							<td>관리</td>
+						</tbody>
+					</table>
+					<!-- 기업회원 -->
+
+					<!-- 관리사회원 -->
+					<table class="MANAGEMENT_USER">
+						<thead>
+							<th>No</th>
+							<th><input id="CHECK_NORMAL8" type="checkbox"><label for="CHECK_NORMAL8"></label></th>
+							<th>관리자유형</th>
+							<th>부서</th>
+							<th>직급</th>
+							<th>이름</th>
+							<th>이메일</th>
+							<th>등록일시</th>
+							<th>관리</th>
+						</thead>
+						<tbody>
+							<td>No</td>
+							<td><input id="CHECK_NORMAL8" type="checkbox"><label for="CHECK_NORMAL8"></label></td>
+							<td>관리자유형</td>
+							<td>부서</td>
+							<td>직급</td>
+							<td>이름</td>
+							<td>이메일</td>
+							<td>등록일시</td>
+							<td>관리</td>
+						</tbody>
+						<tbody>
+							<td>No</td>
+							<td><input id="CHECK_NORMAL8" type="checkbox"><label for="CHECK_NORMAL8"></label></td>
+							<td>관리자유형</td>
+							<td>부서</td>
+							<td>직급</td>
+							<td>이름</td>
+							<td>이메일</td>
+							<td>등록일시</td>
+							<td>관리</td>
+						</tbody>
+						<tbody>
+							<td>No</td>
+							<td><input id="CHECK_NORMAL8" type="checkbox"><label for="CHECK_NORMAL8"></label></td>
+							<td>관리자유형</td>
+							<td>부서</td>
+							<td>직급</td>
+							<td>이름</td>
+							<td>이메일</td>
+							<td>등록일시</td>
+							<td>관리</td>
+						</tbody>
+						<tbody>
+							<td>No</td>
+							<td><input id="CHECK_NORMAL8" type="checkbox"><label for="CHECK_NORMAL8"></label></td>
+							<td>관리자유형</td>
+							<td>부서</td>
+							<td>직급</td>
+							<td>이름</td>
+							<td>이메일</td>
+							<td>등록일시</td>
+							<td>관리</td>
+						</tbody>
+					</table>
+					<!-- 관리사회원 -->
+
 					</table>
 					</article>
 					<ul class="pagenum" style="display: flex;">
@@ -445,6 +741,14 @@
 			<section id="CAL_ADMIN_CONTENT">
 				<h4>총 100개</h4>
 				<button>검색 결과 엑셀 다운로드</button><button>선택 항목 다운로드</button>
+				<ul id="CAL_ADMIN_NAV">
+					<li id="CAL_ADMIN_ALL">전체회원</li>
+					<li id="CAL_ADMIN_USER">일반회원</li>
+					<li id="CAL_ADMIN_TRNASLATION">번역사 회원 신청관리</li>
+					<li id="CAL_ADMIN_USER_STATISTICS">번역사 회원</li>
+					<li id="CAL_ADMIN_USER_PRICE">기업회원(B to B)</li>
+					<li id="CAL_ADMIN_COMPANY_PRICE">관리자 회원</li>
+				</ul>
 				<article>
 					<table>
 						<thead>
@@ -579,22 +883,94 @@
 		<div class="box-title">블로그관리<i class="btn-box-close fa-solid fa-xmark"></i></div>
 		<div class="box-content">
 			<section id="BLOG_ADMIN_CONTENT">
-				<h4>총 100개</h4>
-				<button>검색 결과 엑셀 다운로드</button><button>선택 항목 다운로드</button>
+				<h4>블로그 목록</h4>
+				<a href="#/detail/blogsub">블로그동기화</a>		
 				<article>
-					<table>
-						<thead>
-							<tr>
-
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-
-							</tr>
-						</tbody>
-					</table>
+					<div class="BLOG_BOX">
+						<div class="BLOG">
+							<img src="https://picsum.photos/200" alt="">
+							<div class="BLOG_TXT">
+								<p>카테고리</p>
+								<h5>1분 안에 회의록 번역하기</h5>
+								<em>2022.6.28</em>
+							</div>
+							<a href="#/detail/blogcorrect">수정하기</a>
+						</div>
+						<div class="BLOG">
+							<img src="https://picsum.photos/200" alt="">
+							<div class="BLOG_TXT">
+								<p>카테고리</p>
+								<h5>1분 안에 회의록 번역하기</h5>
+								<em>2022.6.28</em>
+							</div>
+							<a href="#/detail/blogcorrect">수정하기</a>
+						</div>
+						<div class="BLOG">
+							<img src="https://picsum.photos/200" alt="">
+							<div class="BLOG_TXT">
+								<p>카테고리</p>
+								<h5>1분 안에 회의록 번역하기</h5>
+								<em>2022.6.28</em>
+						</div>
+							<a href="#/detail/blogcorrect">수정하기</a>
+						</div>
+						<div class="BLOG">
+							<img src="https://picsum.photos/200" alt="">
+							<div class="BLOG_TXT">
+								<p>카테고리</p>
+								<h5>1분 안에 회의록 번역하기</h5>
+								<em>2022.6.28</em>
+							</div>
+							<a href="#/detail/blogcorrect">수정하기</a>
+						</div>
+						<div class="BLOG">
+							<img src="https://picsum.photos/200" alt="">
+							<div class="BLOG_TXT">
+								<p>카테고리</p>
+								<h5>1분 안에 회의록 번역하기</h5>
+								<em>2022.6.28</em>
+							</div>
+							<a href="#/detail/blogcorrect">수정하기</a>
+						</div>
+						<div class="BLOG">
+							<img src="https://picsum.photos/200" alt="">
+							<div class="BLOG_TXT">
+								<p>카테고리</p>
+								<h5>1분 안에 회의록 번역하기</h5>
+								<em>2022.6.28</em>
+						</div>
+							<a href="#/detail/blogcorrect">수정하기</a>
+						</div>
+						<div class="BLOG">
+							<img src="https://picsum.photos/200" alt="">
+							<div class="BLOG_TXT">
+								<p>카테고리</p>
+								<h5>1분 안에 회의록 번역하기</h5>
+								<em>2022.6.28</em>
+							</div>
+							<a href="#/detail/blogcorrect">수정하기</a>
+						</div>
+					</div>
 				</article>
+				
+				<ul class="pagenum" style="display: flex;">
+					<li class="button2"><a href="#none" onclick="return false;" class="board_button"><</a></li>
+					<li class="button2"><a href="#none" onclick="return false;" class="board_button"><<</a></li>
+					<li><a href="#none" onclick="return false;" class="page-numbers current" title="1페이지">1</a></li>
+					<li><a href="?pagenum=1&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="2페이지로 이동합니다.">2</a></li>
+					<li><a href="?pagenum=2&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="3페이지로 이동합니다.">3</a></li>
+					<li><a href="?pagenum=3&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="4페이지로 이동합니다.">4</a></li>
+					<li><a href="?pagenum=4&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="5페이지로 이동합니다.">5</a></li>
+					<li><a href="?pagenum=5&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="6페이지로 이동합니다.">6</a></li>
+					<li><a href="?pagenum=6&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="7페이지로 이동합니다.">7</a></li>
+					<li><a href="?pagenum=7&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="8페이지로 이동합니다.">8</a></li>
+					<li><a href="?pagenum=8&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="9페이지로 이동합니다.">9</a></li>
+					<li><a href="?pagenum=9&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="10페이지로 이동합니다.">10</a></li>
+					<li class="button2"><a href="?pagenum=10&amp;search_select=&amp;keyword=&amp;category_idx=219" class="board_button">></a>
+					</li>
+					<li class="button2"><a href="?pagenum=10&amp;search_select=&amp;keyword=&amp;category_idx=219" class="board_button">>></a>
+					</li>
+				</ul>
 			</section>
 		</div>
 	</div>
@@ -605,47 +981,178 @@
 			<section id="OPERATION_ADMIN_CONTENT">
 				<h4>총 100개</h4>
 				<button>검색 결과 엑셀 다운로드</button><button>선택 항목 다운로드</button>
+				<ul id="OPERATION_ADMIN_NAV">
+					<li id="OPERATION_ADMIN_ALL">메인배너관리</li>
+					<li id="OPERATION_ADMIN_USER">FAQ</li>
+					<li id="OPERATION_ADMIN_TRNASLATION">공지사항</li>
+					<li id="OPERATION_ADMIN_USER_STATISTICS">1 : 1 문의</li>
+					<li id="OPERATION_ADMIN_USER_PRICE">오류신고관리</li>
+					<li id="OPERATION_ADMIN_COMPANY_PRICE">약정관리</li>
+				</ul>
 				<article>
+					
+
+					<!-- 메인배너 -->
+					<h5>메인배너</h5>
 					<table>
 						<thead>
 							<tr>
 								<td>No</td>
-								<td><input type="checkbox"class="table_check" name="check"></td>
-								<td>이름/성별/생년월일</td>
-								<td>이메일 휴대폰</td>
-								<td>주소</td>
-								<td>박역사 입금일/결제일</td>
-								<td>결제금액/할인금액</td>
-								<td>번역사 금액/최종정산액</td>
-								<td>영업 수익% 수수료 비율</td>
-								<td>총 매출금액</td>
-								<td>월정산 년정상</td>
-								<td>1:1문의 견적서</td>
-								<td>약관현황 채팅설정</td>
-								<td>평점/리뷰 상세</td>
-								<td>관리자 메모</td>
+								<td>제목</td>
+								<td>메인 배너</td>
+								<td>노출 기간</td>
+								<td>순서</td>
+								<td>노출 여부</td>
+								<td>등록일</td>
+								<td>관리</td>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>1</td>
-								<td><input type="checkbox"class="table_check" name="check"></td>
-								<td>홍길동(남/21)</td>
-								<td>exam@email.com (010-1234-5678)</td>
-								<td>서울시 마포구 공덕동 백범로</td>
-								<td>YY-MM-DD / YY-MM-DD</td>
-								<td>100,000 / 50,000</td>
-								<td>100,000 / 50,000</td>
-								<td>50% / 20%</td>
-								<td>100,000</td>
-								<td>100,000 / 500,000</td>
-								<td>문의 이메일</td>
-								<td>이용약관설정</td>
-								<td>5 5/ 보기</td>
-								<td></td>
+								<td>No</td>
+								<td>제목</td>
+								<td>메인 배너</td>
+								<td>노출 기간</td>
+								<td>순서</td>
+								<td>노출 여부</td>
+								<td>등록일</td>
+								<td><a href="#/detail/banner">관리</a></td>
 							</tr>
 						</tbody>
 					</table>
+					<!-- 메인배너 -->
+
+					<!-- FAQ -->
+					<h5>FAQ</h5>
+					<table>
+						<thead>
+							<tr>
+								<td>No</td>
+								<td>순서</td>
+								<td>유형</td>
+								<td>질문</td>
+								<td>답변</td>
+								<td>공개/비공개</td>
+								<td>관리</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>No</td>
+								<td>순서</td>
+								<td>유형</td>
+								<td>질문</td>
+								<td>답변</td>
+								<td>공개/비공개</td>
+								<td><a href="#/detail/FnQ">관리</a></td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- FAQ -->
+
+					<!-- 공지사항 -->
+					<h5>공지사항</h5>
+					<table>
+						<thead>
+							<tr>
+								<td>No</td>
+								<td>제목</td>
+								<td>내용</td>
+								<td>등록일시</td>
+								<td>관리</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>No</td>
+								<td>제목</td>
+								<td>내용</td>
+								<td>등록일시</td>
+								<td><a href="#/detail/notice">관리</a></td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- 공지사항 -->
+
+					<!-- 1:1 문의 -->
+					<h5>1 : 1 문의</h5>
+					<table>
+						<thead>
+							<tr>
+								<td>No</td>
+								<td>이름</td>
+								<td>질문</td>
+								<td>등록일시</td>
+								<td>답변여부</td>
+								<td>관리</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>No</td>
+								<td>이름</td>
+								<td>질문</td>
+								<td>등록일시</td>
+								<td>답변여부</td>
+								<td><a href="#/detail/onetone">관리</a></td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- 1:1 문의 -->
+
+					<!-- 오류관리신고 -->
+					<h5>오류관리신고</h5>
+					<table>
+						<thead>
+							<tr>
+								<td><input id="CHECK_NORMAL8" type="checkbox"><label for="CHECK_NORMAL8"></label></td>
+								<td>No</td>
+								<td>작성자</td>
+								<td>오류신고종류</td>
+								<td>오류내용</td>
+								<td>등록일시</td>
+								<td>답변여부</td>
+								<td>관리</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input id="CHECK_NORMAL9" type="checkbox"><label for="CHECK_NORMAL9"></label> </td>
+								<td>No</td>
+								<td>작성자</td>
+								<td>오류신고종류</td>
+								<td>오류내용</td>
+								<td>등록일시</td>
+								<td>답변여부</td>
+								<td><a href="#/detail/erroreporting">관리</a></td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- 오류관리신고 -->
+
+					<!-- 약관관리 -->
+					<h5>약관관리</h5>
+					<table>
+						<thead>
+							<tr>
+								<td>No</td>
+								<td>약관 버전</td>
+								<td>약관 종류</td>
+								<td>등록일시</td>
+								<td>관리</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>No</td>
+								<td>약관 버전</td>
+								<td>약관 종류</td>
+								<td>등록일시</td>
+								<td><a href="#/detail/terms">관리</a></td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- 약관관리 -->
 				</article>
 			</section>
 			<ul class="pagenum" style="display: flex;">
@@ -716,7 +1223,6 @@ $(function(){
 	//겁색옵션 바깥클릭하면 닫기
 	OutsideClose(".search-option-box");
 
-// 	//닫기 버튼 클릭시 사라지기
 
 });
 
@@ -734,7 +1240,7 @@ $(function(){
 	// 전체 버튼 누르면 전체 데이터 나오기
 	$(document).ready(function(){
 		$('#TRANS_ADMIN_ALL').click(function(){
-		$('#TRANS_ADMIN_CONTENT table').css('width', '500vw');
+		$('#TRANS_ADMIN_CONTENT table').css('width', '600vw');
 		$('.user_data').show();
     	$('.work_data').show();
 		$('.stats_data').show();
@@ -842,5 +1348,88 @@ $(function(){
 	$('.company_accounts').show();	
   });
 });
+
+
+
+	// 이름(성별/생년월일 누르면 나오는 상세 페이지)
+	$(".detail_btn").click(function() {
+		
+	});
+
+
+
+	// 아래서부터 회원관리
+
+// 전체회원 버튼 누르면 전체 데이터 나오기
+	$(document).ready(function(){
+		$('#MEMBER_ADMIN_ALL').click(function(){
+		$('.GENERAL_USER').show();
+    	$('.COMPANY_USER_SUB').show();
+		$('.COMPANY_USER').show();
+		$('.CORPORATION_USER').show();
+		$('.MANAGEMENT_USER').show();
+		})
+	})
+
+	// 일반회원관리 버튼 누르면 일반회원관리만 나오기
+	$(document).ready(function(){
+		$('#MEMBER_ADMIN_USER').click(function(){
+		$('.GENERAL_USER').show();
+    	$('.COMPANY_USER_SUB').hide();
+		$('.COMPANY_USER').hide();
+		$('.CORPORATION_USER').hide();
+		$('.MANAGEMENT_USER').hide();
+		})
+	})
+
+	// 번역사 관리 버튼 누르면 번역사 관리만 나오기
+	$(document).ready(function() {
+  	$('#MEMBER_ADMIN_TRNASLATION').click(function() {
+    $('.GENERAL_USER').hide();
+    $('.COMPANY_USER_SUB').show();
+	$('.COMPANY_USER').hide();
+	$('.CORPORATION_USER').hide();
+	$('.MANAGEMENT_USER').hide();
+
+  });
+});
+
+	// 번역사 회원관리
+	$(document).ready(function() {
+  	$('#MEMBER_ADMIN_USER_STATISTICS').click(function() {
+	$('.GENERAL_USER').hide();
+    $('.COMPANY_USER_SUB').hide();
+	$('.COMPANY_USER').show();
+	$('.CORPORATION_USER').hide();
+	$('.MANAGEMENT_USER').hide();	
+
+  });
+});
+
+	// 기업번역 신청관리
+	$(document).ready(function() {
+  	$('#MEMBER_ADMIN_USER_PRICE').click(function() {
+    $('.GENERAL_USER').hide();
+    $('.COMPANY_USER_SUB').hide();
+	$('.COMPANY_USER').hide();
+	$('.CORPORATION_USER').show();
+	$('.MANAGEMENT_USER').hide();		
+
+  });
+});
+
+	// 관리자 회원
+	$(document).ready(function() {
+  	$('#MEMBER_ADMIN_COMPANY_PRICE').click(function() {
+    $('.GENERAL_USER').hide();
+    $('.COMPANY_USER_SUB').hide();
+	$('.COMPANY_USER').hide();
+	$('.CORPORATION_USER').hide();
+	$('.MANAGEMENT_USER').show();		
+
+  });
+});
+
+
 
 </script>

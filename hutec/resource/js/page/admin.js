@@ -17,7 +17,7 @@ $(document).on('click','.sidemenu li',function(){
   let popName     = $(this).find("i").attr("name"); //팝업명
   let headerTitle = ''; //헤더타이틀명
 
-  //팝업 보여주기
+  // //팝업 보여주기
   $(".page-container").find(`#${popName}`).fadeIn();
 
   //헤더 보여주기
